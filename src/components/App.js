@@ -7,7 +7,6 @@ const Login = ({ isLoggedIn, onLogin }) => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // check if both fields are filled
     if (username.trim() !== "" && password.trim() !== "") {
       onLogin();
     } else {
@@ -53,11 +52,13 @@ const App = () => {
 
   return (
     <div>
-      {/* Do not remove the main div */}
+      {/* ✅ Parent Heading */}
+      <h1>Login Page</h1>
+
+      {/* Child Component */}
       <Login isLoggedIn={isLoggedIn} onLogin={handleLogin} />
     </div>
   );
 };
 
 export default App;
-
