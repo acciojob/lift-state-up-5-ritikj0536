@@ -53,7 +53,8 @@ const App = () => {
   return (
     <div>
       {/* ✅ Parent Heading */}
-      <h1>Login Page</h1>
+      <h1>Parent Component</h1>
+
 
       {/* Child Component */}
       <Login isLoggedIn={isLoggedIn} onLogin={handleLogin} />
